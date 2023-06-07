@@ -21,6 +21,6 @@ struct SPModel {
     var amountPerPerson: Double {
         let tipValue = (checkAmount / 100) * Double(tipPercent)
         let totalAmount = checkAmount + tipValue
-        return totalAmount/Double(numberOfPersons)
+        return totalAmount/Double(numberOfPersons + 2)
     }
 }

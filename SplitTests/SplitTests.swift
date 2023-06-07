@@ -33,9 +33,8 @@ final class SplitTests: XCTestCase {
     }
 
     func testAmountPerPerson() {
-        model.numberOfPersons = 2
         model.checkAmount = 80
         model.tipPercent = 10
-        XCTAssertEqual(model.amountPerPerson, 44)
+        XCTAssertEqual(model.amountPerPerson, 22)
     }
 }
